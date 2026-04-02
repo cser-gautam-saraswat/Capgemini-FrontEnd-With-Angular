@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        nav {
+            height: 70px;
+            background-color: yellow;
+        }
+        @media screen and (max-width : 500px){
+            nav{
+                background-color: red;
+            }
+
+            p{
+                display: none;
+            }
+        }
+
+        body>div{
+            height: 400px;
+            width: 400px;
+            border: solid 3px red;
+            display: flex;
+        }
+
+        div div{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            border: solid 3px white;
+        }
+
+        @media screen and (max-width : 500px){
+            nav{
+                background-color: red;
+            }
+
+            body>div{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav></nav>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus eos maiores in ut corporis, provident blanditiis iusto consectetur veritatis, assumenda ratione voluptatibus temporibus vero obcaecati neque quasi magni nesciunt ex aut nihil optio. Nostrum, voluptatibus!</p>
+    <h1>heading</h1>
+    <div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

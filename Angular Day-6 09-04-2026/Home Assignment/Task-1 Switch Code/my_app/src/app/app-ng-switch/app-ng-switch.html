@@ -1,0 +1,11 @@
+<p>app-ng-switch works!</p>
+
+<div [ngSwitch]="role">
+
+  <p *ngSwitchCase="'Parent'">Welcome Parent</p>
+  <p *ngSwitchCase="'Student'">Welcome Student</p>
+  <p *ngSwitchCase="'Teacher'">Welcome Teacher</p>
+
+  <p *ngSwitchDefault>Incorrect Role</p>
+
+</div>
